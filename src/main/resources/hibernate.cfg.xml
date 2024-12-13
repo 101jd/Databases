@@ -1,9 +1,8 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
-        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:148.251.158.171:3306</property>
+        <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mariadb://148.251.158.171:3306/Persons</property>
         <property name="connection.username">jd101</property>
         <property name="connection.password"></property>
         <property name="hibernate.show_sql ">true</property>

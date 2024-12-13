@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Connector implements Closeable {
+public class TestConnector implements Closeable {
     private String password;
     private final String URL = "jdbc:mysql://148.251.158.171:3306";
     private String user;
@@ -17,7 +17,7 @@ public class Connector implements Closeable {
 
 
 
-    public Connector(String user, String pwdFilename) throws IOException {
+    public TestConnector(String user, String pwdFilename) throws IOException {
          password = new BufferedReader(new FileReader(pwdFilename)).readLine();
          this.user = user;
     }
